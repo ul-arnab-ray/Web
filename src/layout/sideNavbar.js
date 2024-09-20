@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Box } from "@mui/material";
 import { useLocation, useNavigate } from "react-router-dom";
 
@@ -12,7 +12,6 @@ const SideNavbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Determine the active state based on the current location
   const isHomeActive = location.pathname === "/";
   const isServiceActive = location.pathname === "/service";
 
